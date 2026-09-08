@@ -11,3 +11,7 @@ function filterPets(category) {
         }
     });
 }
+
+document.querySelectorAll('.filter-container button').forEach(btn => {
+    btn.addEventListener('click', () => filterPets(btn.dataset.category));
+});

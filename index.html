@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Mascotas</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header>
@@ -13,30 +15,34 @@
     </header>
 
     <main>
-        <div class="filter-container">
-            <button onclick="filterPets('all')">Todos</button>
-            <button onclick="filterPets('dog')">Perros</button>
-            <button onclick="filterPets('cat')">Gatos</button>
-        </div>
+        <nav class="filter-container">
+            <button data-category="all">Todos</button>
+            <button data-category="dog">Perros</button>
+            <button data-category="cat">Gatos</button>
+        </nav>
 
         <section class="gallery" id="pet-gallery">
             <article class="card" data-category="dog">
-                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=300&q=80" alt="Perro Golden">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=300&q=80"
+                    alt="Perro Golden">
                 <h3>Max</h3>
                 <p>Perro - Juguetón y leal</p>
             </article>
             <article class="card" data-category="cat">
-                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=300&q=80" alt="Gato mirando fijo">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=300&q=80"
+                    alt="Gato mirando fijo">
                 <h3>Luna</h3>
                 <p>Gato - Independiente</p>
             </article>
             <article class="card" data-category="dog">
-                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=300&q=80" alt="Perro Bulldog">
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=300&q=80"
+                    alt="Perro Bulldog">
                 <h3>Rocky</h3>
                 <p>Perro - Protector y tranquilo</p>
             </article>
             <article class="card" data-category="cat">
-                <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=300&q=80" alt="Gato en la ventana">
+                <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=300&q=80"
+                    alt="Gato en la ventana">
                 <h3>Simba</h3>
                 <p>Gato - Muy curioso</p>
             </article>
@@ -45,4 +51,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
